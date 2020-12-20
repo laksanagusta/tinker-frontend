@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { createBrowserHistory } from "history";
+import { Router, Route, Switch } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import Home from "./pages/Home";
+import "./components/atoms/FontAwesome"
+import "./assets/scss/style.scss";
+import About from "./pages/About";
+import Project from "pages/Project";
+import {Provider} from 'react-redux'
+import {store} from 'config/redux/store'
+import ProjectDetail from "pages/ProjectDetail";
+
+const history = createBrowserHistory({
+  basename: process.env.PUBLIC_URL,
+});
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main role="main">
+      <Provider store={store}>
+        <Router history={history} basename={process.env.PUBLIC_URL}>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/projects" component={Project} />
+            <Route exact path="/projectDetail/:productId" component={ProjectDetail} />
+          </Switch>
+        </Router>
+        <ToastContainer></ToastContainer>
+      </Provider>
+      </main>
     </div>
   );
 }
