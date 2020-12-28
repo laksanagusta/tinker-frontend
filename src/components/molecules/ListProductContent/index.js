@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import ReactHtmlParser from 'react-html-parser'
-import { noAuto } from '@fortawesome/fontawesome-svg-core'
 import './listProductContent.scss'
 
 const ListProductContent = ({image, description, title, position}) => {
@@ -9,12 +7,12 @@ const ListProductContent = ({image, description, title, position}) => {
         return (
             <div className="row mb-5">
                 <div className="col-md-7">
-                    <img src={image} className="card-img-top rounded shadow" alt="product"/>
+                    <img src={image} className="img-fluid rounded shadow product-content-image mb-3" alt="product"/>
                 </div>
                 <div className="col-md-5 align-self-center px-3">
                     <div className="mt-2">
-                        <h4 className="fw-bold" style={{color:'NavajoWhite '}}>{title}</h4>
-                        <p className="text-secondary">{ReactHtmlParser(description)}</p>
+                        <h4 className="fw-bold" style={{color:'LightBlue'}}>{title}</h4>
+                        <div className="text-secondary">{ReactHtmlParser(description)}</div>
                     </div>
                 </div>
             </div>
@@ -25,12 +23,12 @@ const ListProductContent = ({image, description, title, position}) => {
             <div className="row mb-5">
                 <div className="col-md-5 align-self-center px-3">
                     <div className="mt-2">
-                        <h4 className="fw-bold" style={{color:'NavajoWhite '}}>{title}</h4>
-                        <p className="text-secondary">{ReactHtmlParser(description)}</p>
+                        <h4 className="fw-bold" style={{color:'LightBlue'}}>{title}</h4>
+                        <div className="text-secondary">{ReactHtmlParser(description)}</div>
                     </div>
                 </div>
                 <div className="col-md-7">
-                    <img src={image} className="card-img-top rounded shadow" alt="product"/>
+                    <img src={image} className="img-fluid product-content-image rounded shadow mb-3" alt="product"/>
                 </div>
             </div>
         )
@@ -39,11 +37,11 @@ const ListProductContent = ({image, description, title, position}) => {
         return (
             <div className="mb-5">
                 <div className="mt-2 mb-5 d-flex justify-content-center">
-                    <img src={image} className="card-img-top shadow rounded" style={{width:700}} alt="product"/>
+                    <img src={image} className="img-fluid shadow product-content-image mb-3"  style={{width:'100%'}} alt="product"/>
                 </div>
                 <div className="mt-2 mb-5">
-                    <h4 className="fw-bold" style={{color:'NavajoWhite '}}>{title}</h4>
-                    <p className="text-secondary">{ReactHtmlParser(description)}</p>
+                    <h4 className="fw-bold" style={{color:'LightBlue '}}>{title}</h4>
+                    <div className="text-secondary">{ReactHtmlParser(description)}</div>
                 </div>
             </div>
         )

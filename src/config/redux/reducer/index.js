@@ -1,7 +1,8 @@
 const initialState = {
     project:[],
     isLoading:false,
-    projectDetail:[]
+    projectDetail:[],
+    serverURL:"http://localhost:8000/"
 }
 
 const reducer = (state=initialState, action) => {

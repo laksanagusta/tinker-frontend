@@ -1,12 +1,12 @@
 import axios from 'axios';
+import { url } from '../../../../utils/urls';
 
-// const APIurl = 'https://jinx-server.herokuapp.com/api/v1/';
-const APIurl = 'http://localhost:5000/api/v1/';
+const APIurl = 'api/v1/';
 
 export const getProducts = (data) => (dispatch) => {
     return new Promise((resolve, reject) => {
         return(
-            axios.get(APIurl+'getProducts')
+            axios.get(`${url.baseUrl}${APIurl}getProducts`)
             .then((res) => {
                 dispatch({type:'CHANGE_LOADING', value:false})
                 dispatch({type:'CHANGE_PRODUCT', value:res.data.allProduct})
@@ -23,7 +23,7 @@ export const getProducts = (data) => (dispatch) => {
 export const getProjectDetails = (data) => (dispatch) => {
     return new Promise((resolve, reject) => {
         return(
-            axios.get(APIurl+'getProductDetails/'+data.productId)
+            axios.get(`${url.baseUrl}${APIurl}getProductDetails/${data.productId}`)
             .then((res) => {
                 dispatch({type:'CHANGE_LOADING', value:false})
                 dispatch({type:'CHANGE_PRODUCTDETAILS', value:res.data})

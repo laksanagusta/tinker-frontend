@@ -54,7 +54,7 @@
 // scss-docs-end import-stack
 
 .main {
-    min-height: 80vh;
+    min-height: 90vh;
 }
 
 a {
@@ -65,3 +65,29 @@ a {
 a:hover {
     color: gray;
 }
+
+section {
+    background-color: #0D1117;
+}
+
+nav {
+    background-color: #161B22;
+    .nav-link {
+        color: white;
+    }
+    .navbar-brand {
+        color: white;
+    }
+}
+
+footer  {
+    background-color: #0D1117;
+}
+
+p {
+    color: #E9ECEF;
+}
+
+
+
+

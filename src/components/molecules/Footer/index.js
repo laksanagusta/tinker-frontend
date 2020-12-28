@@ -16,9 +16,9 @@ const Footer = ({isPrimary}) => {
     else
     {
         return (
-            <footer className="text-muted mt-5 p-4 border-top">
-                <div className="container text-center">
-                    <p>Copyright &copy; Dika L</p>
+            <footer className="text-muted border-top border-dark">
+                <div className="container text-center py-5">
+                    <p className="mb-0 text-muted">Copyright &copy; Dika L</p>
                 </div>
             </footer>
         )
