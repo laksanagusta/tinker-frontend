@@ -4,10 +4,10 @@ const Experience = ({title, duration, name}) => {
     return (
         <div className="col-md-6 mt-3 rounded">
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-7">
                     <div className="fw-bold text-secondary">{duration}</div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-5">
                     <div className="fw-bold text-secondary"><b>{name}</b></div>
                     <small className="text-muted">{title}</small>
                 </div>                
