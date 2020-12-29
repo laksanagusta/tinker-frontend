@@ -2,7 +2,8 @@ const initialState = {
     project:[],
     isLoading:false,
     projectDetail:[],
-    serverURL:"http://localhost:8000/"
+    serverURL:"http://localhost:8000/",
+    s3url:"https://tinker-resource.s3.us-east-2.amazonaws.com/"
 }
 
 const reducer = (state=initialState, action) => {

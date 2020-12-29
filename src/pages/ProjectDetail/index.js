@@ -14,7 +14,7 @@ const ProjectDetail = () => {
     const {productId} = useParams()
     const [productContent, setProductContent] = useState([])
     const [productTech, setProductTech] = useState([])
-    const serverURL = useSelector((state) => state.serverURL)
+    const s3url = useSelector((state) => state.s3url)
 
     useEffect(() => {
         const getProductDetails = async () => {
@@ -52,7 +52,7 @@ const ProjectDetail = () => {
                         </div>
                     </div>
                     {productContent.map((item, index) => {
-                        return <ListProductContent key={item._id} position={item.position} title={item.title} image={`${serverURL}${item.imageUrl}`} description={item.description}/>
+                        return <ListProductContent key={item._id} position={item.position} title={item.title} image={`${s3url}${item.imageUrl}`} description={item.description}/>
                     })}
                 </div>
             </section>
