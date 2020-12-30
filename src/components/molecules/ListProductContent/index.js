@@ -37,7 +37,7 @@ const ListProductContent = ({image, description, title, position}) => {
         return (
             <div className="mb-5">
                 <div className="mt-2 mb-5 d-flex justify-content-center">
-                    <img src={image} className="img-fluid shadow product-content-image mb-3" alt="product"/>
+                    <img src={image} className="img-fluid shadow mb-3" alt="product"/>
                 </div>
                 <div className="mt-2 mb-5">
                     <h4 className="fw-bold" style={{color:'LightBlue '}}>{title}</h4>
