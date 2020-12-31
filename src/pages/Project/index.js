@@ -9,6 +9,7 @@ const Project = () => {
     const dispatch = useDispatch()
     const [product, setProduct] = useState([])
     const s3url = useSelector((state) => state.s3url)
+    const isLoading = useSelector((state) => state.isLoading)
 
     useEffect(() => {
         const getAllProducts = async () => {

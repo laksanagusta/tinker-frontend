@@ -7,6 +7,7 @@ import "./components/atoms/FontAwesome"
 import "./assets/scss/style.scss";
 import About from "./pages/About";
 import Project from "pages/Project";
+import Design from "pages/Design";
 import {Provider} from 'react-redux'
 import {store} from 'config/redux/store'
 import ProjectDetail from "pages/ProjectDetail";
@@ -29,6 +30,7 @@ function App() {
             <Route exact path="/" component={Home}/>
             <Route exact path="/about" component={About}/>
             <Route exact path="/projects" component={Project}/>
+            <Route exact path="/design" component={Design}/>
             <Route exact path="/projectDetail/:productId" component={ProjectDetail}/>
           </Switch>
         </Router>

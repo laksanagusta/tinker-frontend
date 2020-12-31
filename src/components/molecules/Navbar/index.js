@@ -16,6 +16,7 @@ const Navbar = ({isPrimary, activePage}) => {
                         <ul className="d-flex navbar-nav">
                             <Link className={`nav-link ${activePage === "home" ? "active" : ""}`} to="/">Home</Link>
                             <Link className={`nav-link ${activePage === "project" ? "active" : ""}`} to="/projects">Project</Link>
+                            <Link className={`nav-link ${activePage === "design" ? "active" : ""}`} to="/design">Design</Link>
                             <Link className={`nav-link ${activePage === "about" ? "active" : ""}`} to="/about">About</Link>
                         </ul>
                     </div>

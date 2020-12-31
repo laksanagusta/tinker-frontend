@@ -5,6 +5,7 @@ const APIurl = 'api/v1/';
 
 export const getProducts = (data) => (dispatch) => {
     return new Promise((resolve, reject) => {
+        dispatch({type:'CHANGE_LOADING', value:true})
         return(
             axios.get(`${url.baseUrl}${APIurl}getProducts`)
             .then((res) => {
@@ -22,6 +23,7 @@ export const getProducts = (data) => (dispatch) => {
 
 export const getProjectDetails = (data) => (dispatch) => {
     return new Promise((resolve, reject) => {
+        dispatch({type:'CHANGE_LOADING', value:true})
         return(
             axios.get(`${url.baseUrl}${APIurl}getProductDetails/${data.productId}`)
             .then((res) => {

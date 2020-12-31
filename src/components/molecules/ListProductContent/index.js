@@ -36,7 +36,7 @@ const ListProductContent = ({image, description, title, position}) => {
     else {
         return (
             <div className="mb-5">
-                <div className="mt-2 mb-5 d-flex justify-content-center">
+                <div className="mt-2 mb-5 justify-content-center">
                     <img src={image} className="img-fluid shadow mb-3" alt="product"/>
                 </div>
                 <div className="mt-2 mb-5">
