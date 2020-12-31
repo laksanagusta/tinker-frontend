@@ -25,7 +25,7 @@ const Design = () => {
                     <div className="container-sm py-5">
                         <div className="row">
                             {design.map((item) => {
-                                return <CardDesign key={item._id} link="https://dribbble.com/notdika" image={`${s3url}${item.imageUrl}`} name={item.title} tag={item.tag}/>
+                                return <CardDesign key={item._id} link="https://dribbble.com/notdika" description={item.description} image={`${s3url}${item.imageUrl}`} name={item.title} tag={item.tag}/>
                             })}
                         </div>
                     </div>

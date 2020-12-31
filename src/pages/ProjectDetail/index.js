@@ -37,7 +37,6 @@ const ProjectDetail = () => {
                             <div className="d-flex flex-wrap mb-3">
                                 {productTech.map((item, index) => {
                                     const iconName = item.iconName.split("-");
-
                                     return <div key={item._id} className="bd-highlight text-secondary" style={{paddingRight:20}}><FontAwesomeIcon icon={[iconName[0], iconName[1]]}/> {item.name}</div>
                                 })}
                             </div>
