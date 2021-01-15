@@ -5,7 +5,7 @@ const Navbar = ({isPrimary, activePage}) => {
         return (
             <nav className="navbar navbar-dark navbar-expand-lg">
                 <div className="container my-2">
-                    <Link className="navbar-brand fw-bold" to="/">DIKACONCEPT</Link>
+                    <Link className="navbar-brand fw-bold" to="/">CLARIFIED BY DIKA</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
