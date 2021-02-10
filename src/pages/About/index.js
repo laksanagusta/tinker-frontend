@@ -61,7 +61,7 @@ const About = () => {
                                             <div className="bd-highlight text-secondary mb-2" style={{paddingRight:20}}><FontAwesomeIcon icon={["fab", "laravel"]}/> Laravel</div>
                                             <div className="bd-highlight text-secondary mb-2" style={{paddingRight:20}}><FontAwesomeIcon icon={["fab", "php"]}/> PHP</div>
                                             <div className="bd-highlight text-secondary mb-2" style={{paddingRight:20}}><FontAwesomeIcon icon={["fab", "js"]}/> Javascript</div>
-                                            <div className="bd-highlight text-secondary mb-2" style={{paddingRight:20}}><FontAwesomeIcon icon={["fab", "js"]}/> ExpressJS</div>
+                                            <div className="bd-highlight text-secondary mb-2" style={{paddingRight:20}}><FontAwesomeIcon icon={["fab", "js"]}/> Express</div>
                                             <div className="bd-highlight text-secondary mb-2" style={{paddingRight:20}}><FontAwesomeIcon icon={["fab", "github"]}/> Github</div>                                            
                                             <div className="bd-highlight text-secondary mb-2" style={{paddingRight:20}}><FontAwesomeIcon icon={["fas", "database"]}/> MongoDB</div>
                                             <div className="bd-highlight text-secondary mb-2" style={{paddingRight:20}}><FontAwesomeIcon icon={["fas", "database"]}/> PostgreSQL</div>
