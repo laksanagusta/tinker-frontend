@@ -1,6 +1,6 @@
 
 
 export const url = {
-    baseUrl:"http://ec2-3-22-222-126.us-east-2.compute.amazonaws.com:8000/",
-    s3url:"https://tinker-resource.s3.us-east-2.amazonaws.com/"
+    baseUrl:"http://ec2-13-250-113-162.ap-southeast-1.compute.amazonaws.com:8000//",
+    s3url:"https://dika-portfolio.s3.ap-southeast-1.amazonaws.com/"
 }
